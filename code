@@ -1,0 +1,18 @@
+
+super_set=set(map(int,input().split()))
+
+count=True 
+
+n=int(input())
+
+for i in range(n):
+
+    normal_set=set(map(int,input().split()))
+
+    if len(super_set)>len(normal_set):   ---->superset length greater thann other set 
+        if  not super_set.issuperset(normal_set):  --->  not superset(set of same numbers but same length also)
+
+
+            count=False
+
+print(count)
